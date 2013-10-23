@@ -1,0 +1,24 @@
+  <header>
+    <nav class="nav">
+<!-- position on left -->
+      <div class="title">
+        <p class="title_text"><%= link_to "LESSON CONNECTION", "/" %></p>
+        <p>Connect with the top lacrosse players in the country for private lessons.</p>
+      </div>
+
+<!-- position on right -->
+    <div class="top_right_links">
+    <p>
+        <% if current_player %>
+        <!-- can also have a link to lessons if logged in -->
+          <%= link_to "My Profile", current_player %>
+          <%= link_to "Log Out", "/logout" %>
+        <% else %>
+          <%= link_to "Sign Up", "/players/new" %>
+          <%= link_to "Log In", "/login" %>
+        <% end %>
+      </p>
+      </div>
+
+    </nav>
+  </header>

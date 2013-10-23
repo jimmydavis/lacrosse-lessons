@@ -1,0 +1,18 @@
+<%= form_for(@player) do |f| %>
+  <%= f.text_field :player_name, :placeholder => 'Player Full Name' %>
+  <%= f.text_field :parents_names, :placeholder => 'Parent/Guardian Name(s)' %> <br>
+  <%= f.text_field :email, :placeholder => 'Email' %>
+  <%= f.text_field :phone_number, :placeholder => 'Phone Number' %> <br>
+  <%= f.text_field :age, :placeholder => 'Player Age' %>
+  <%= f.text_field :years_experience, :placeholder => 'Years Experience' %> <br>
+  <%= f.text_field :position, :placeholder => 'Position' %> <br>
+  <%= f.text_field :gender, :placeholder => 'Gender' %> <br>
+  <%= f.text_field :image, :placeholder => 'Profile Photo URL' %> <br>
+
+<br>
+<br>
+  <%= f.password_field :password, :placeholder => 'Password' %><br>
+  <%= f.password_field :password_confirmation, :placeholder => 'Password Confirmation' %><br>
+   <br>
+  <%= f.submit "Let's Lax" %>
+<% end %>

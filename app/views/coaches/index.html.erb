@@ -1,0 +1,14 @@
+<% @coaches.each do |coach| %>
+<div class="all_coaches">
+  <span>Name:</span> <%= coach.first_name %>
+  <%= coach.last_name %> <br>
+  <span>Location:</span> <%= coach.address %> <br>
+  <span>College:</span> <%= coach.college_team %> <br>
+  <span>Professional Team:</span> <%= coach.professional_team %> <br>
+  <span>Position:</span> <%= coach.position %> <br>
+  <span>Accolades:</span> <%= coach.accolades %> <br>
+  <img class="coach_image" src="<%= coach.image %>"/> <br>
+    <!-- TODO: FIX!!!! -->
+  <span class="schedule_lesson">Schedule a Lesson with <%= coach.first_name %>: <%= mail_to coach.email, name = nil, html_options = {:subject => "Private lesson", :body => "Hi, I am interested in scheduling a private lesson with you!  How does DATE sound at TIME? My SON/DAUGHTER is looking forward to working with you!!"} %></span> <br>
+</div>
+<% end %>
