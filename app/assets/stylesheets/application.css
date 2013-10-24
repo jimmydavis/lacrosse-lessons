@@ -14,8 +14,14 @@
 
  body {
   background-color: #b7b7b7;
+  /*background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjF7hCr0j5M3-d6DzdMBmWDLxmsImfS-1WA-UMVVlJhDbY9MF");*/
   font-family: Helvetica;
   color: rgba(0,0,0,.8);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+ /* color: white;*/
+
  }
 
 /*whole body is wrapped in container*/
@@ -24,18 +30,30 @@
     margin: 0 auto;
  }
 
+  body {
+  background-color: #b7b7b7;
+  /*background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjF7hCr0j5M3-d6DzdMBmWDLxmsImfS-1WA-UMVVlJhDbY9MF");*/
+  font-family: Helvetica;
+  color: rgba(0,0,0,.8);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+ /* color: white;*/
+  width: 100%;
+ }
+
  .homepage {
   text-align: center;
  }
 
- /*this is entire nav bar containing title and login links*/
-.nav {
+ header {
   width: 100%;
   display :inline-block;
   background-color: #0f9900;
   margin: 0 auto;
   padding: 10px;
-}
+ }
+
 
 a:link {
   text-decoration: none;
@@ -58,26 +76,41 @@ a:hover {
 positioned top left of nav bar*/
 .title {
   float:left;
-  margin: 10px;
   color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title_text {
+  font-family: Courier;
+  font-size: 36px;
+  position: relative;
+  margin: -10px;
 }
 
 /*this is the login/signup/signin links within nav*/
 .top_right_links {
   float: right;
-  margin: 10px;
+  margin: 0 30px;
 }
 
 /*this is the main logo on the homepage*/
-.main_image {
-  background_image: url("http://imgur.com/riuXAQA");
+.home_text {
+  width: 100%;
+  display :inline-block;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 /*this is the footer of benefits*/
-.benefits {
+footer {
   background-color: #ffffff;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
+  display :inline-block;
+  padding: 10px;
+  clear: both;
 }
 
 
@@ -86,7 +119,7 @@ positioned top left of nav bar*/
   width: 30%;
   float: left;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /*this is main words (easy, access, results)*/
@@ -163,10 +196,6 @@ input[type="submit"] {
   text-align: center;
 }
 
-.title_text {
-  font-family: Courier;
-  font-size: 36px;
-}
 
 
 

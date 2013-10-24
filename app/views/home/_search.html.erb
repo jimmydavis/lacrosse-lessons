@@ -1,8 +1,11 @@
-<p>Schedule A Lesson Now!</p>
+<p>Search by Location</p>
+<p>Find College Players Nearby</p> <br>
+<p>Schedule A Lesson Now!</p> <br>
 
 <%= form_tag coaches_path, :method => :get do %>
   <p>
     <%= text_field_tag :search, params[:search], :placeholder => 'Current location' %>
       <%= submit_tag "Search Nearby Coaches", :name => nil %>
-  </p>
+  </p> <br> <br> <br>
 <% end %>
+
