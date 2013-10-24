@@ -1,6 +1,7 @@
 <%= flash[:notice] %>
 <div class="login">
-<h1>Log In</h1>
+<br>
+
 
 <%= form_tag '/login' do %>
   <%= text_field_tag :email, nil, :placeholder => "Email" %>
@@ -8,3 +9,9 @@
   <%= submit_tag "Log In" %>
   </div> <br> <br>
 <% end %>
+
+ <br>
+ <br>
+ <br>
+
+<%= render partial: 'layouts/footer' %>

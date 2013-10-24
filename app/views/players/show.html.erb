@@ -1,17 +1,10 @@
 <div class="player_profile">
-  <%= @player.player_name %> <br>
-  <%= @player.age %> years old <br>
-  <%= @player.years_experience %> years experience<br>
-  Position: <%= @player.position %> <br>
-  <br>
    <% if current_player %>
-     <%= render partial: 'home/search' %>
+     <%= render partial: 'players/form' %>
    <% end %>
   <br>
   <br>
   <div class="actions">
-  <%= link_to "Edit Profile", edit_player_path %>
   <%= link_to "Delete Profile", @player, :method => :delete, :confirm => "Are you sure you want to delete your Lacrosse Lessons profile?" %>
-  <%= link_to "View All Coaches", coaches_path %>
   </div>
 </div>

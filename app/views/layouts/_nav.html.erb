@@ -1,8 +1,8 @@
-  <header>
+<header>
+  <div class="header">
 <!-- position on left -->
       <div class="title">
         <p class="title_text"><%= link_to "LESSON CONNECTION", "/" %></p>
-        <p>Connect with the top lacrosse players in the country for private lessons</p>
       </div>
 
 
@@ -11,12 +11,15 @@
     <p>
         <% if current_player %>
         <!-- can also have a link to lessons if logged in -->
-          <%= link_to "My Profile", current_player %>
-          <%= link_to "Log Out", "/logout" %>
+          <%= link_to "PROFILE", current_player %>
+          <%= link_to "COACHES", "/coaches" %>
+          <%= link_to "PLAYERS", "/players" %>
+          <%= link_to "LOG OUT", "/logout" %>
         <% else %>
-          <%= link_to "Sign Up", "/players/new" %>
-          <%= link_to "Log In", "/login" %>
+          <%= link_to "SIGN UP", "/players/new" %>
+          <%= link_to "LOG IN", "/login" %>
         <% end %>
       </p>
       </div>
+    </div>
   </header>

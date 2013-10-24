@@ -12,57 +12,48 @@
  *= require_tree .
  */
 
- body {
-  background-color: #b7b7b7;
-  /*background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjF7hCr0j5M3-d6DzdMBmWDLxmsImfS-1WA-UMVVlJhDbY9MF");*/
-  font-family: Helvetica;
-  color: rgba(0,0,0,.8);
-  text-align: center;
-  background-size: cover;
-  background-position: center;
- /* color: white;*/
-
- }
-
-/*whole body is wrapped in container*/
- .container {
-    width: 960px;
-    margin: 0 auto;
- }
-
   body {
-  background-color: #b7b7b7;
-  font-family: Helvetica;
+  background-color: #ffffff;
+  font-family: "Gudea";
   color: rgba(0,0,0,.8);
   text-align: center;
-  background-size: cover;
-  background-position: center;
- /* color: white;*/
   width: 100%;
+  border: 1px solid #b8b8b8;
  }
 
- .homepage {
-  text-align: center;
- }
-
- header {
-  width: 100%;
+.header {
   display :inline-block;
-  background-color: #0f9900;
+  background-color: #ffffff;
   margin: 0 auto;
   padding: 10px;
+  border-bottom: 1px solid #b8b8b8;
+  width: 100%;
  }
 
+ /*this is the footer of benefits*/
+.footer {
+  display :inline-block;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #b8b8b8;
+}
 
+
+a {
+  font-family: "Gudea";
+}
 a:link {
   text-decoration: none;
-  color: white;
+  color: #0f9900;
   margin: 10px;
 }
 
 a:visited {
   text-decoration: none;
-  color: white;
+  color: #0f9900;
   margin: 10px;
 }
 
@@ -70,77 +61,77 @@ a:hover {
   color: rgba(0,0,0,.8);
 }
 
-
 /*this is title of page,
 positioned top left of nav bar*/
 .title {
   float:left;
-  color: #ffffff;
+  color: rgba(0,0,0,.8);
   position: relative;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .title_text {
-  font-family:"Lucida Console", Monaco, monospace;
+  font-family:"Lato";
   font-size: 36px;
   position: relative;
-  margin: -10px;
 }
 
 .title_text a {
-  color: #f1da04;
+  color: #0f9900;
 }
 
 .title_text a:hover {
   color: rgba(0,0,0,.8);
 }
 
-
 /*this is the login/signup/signin links within nav*/
 .top_right_links {
   float: right;
-  margin: 0 30px;
+  margin: 30px 60px;
+  font-family: "Gudea";
 }
 
 /*this is the main logo on the homepage*/
-.home_text {
-  width: 100%;
-  display :inline-block;
-  margin: 0 auto;
+.homepage_main_text {
+  font-size: 24px;
+  font-family: "Gudea" ;
+  margin: 10px auto;
   padding: 10px 0;
 }
 
-/*this is the footer of benefits*/
-footer {
-  background-color: #ffffff;
-  text-align: center;
+.homepage_image {
+  display: inline-block;
   margin: 0 auto;
-  width: 100%;
-  display :inline-block;
-  padding: 10px;
-  clear: both;
 }
 
-
+.homepage_sub_text {
+  font-family: 'Neuton', serif;
+  font-size: 20px;
+  color: #b7b7b7;
+}
 /*this is the main benefit list and benefit desc together*/
 .benefit_group {
   width: 30%;
   float: left;
   text-align: center;
   background-color: #ffffff;
-  margin: 0 10px;
+  margin: 30px 10px;
 }
 
 /*this is main words (easy, access, results)*/
 .benefit_list {
   color: #0f9900;
   font-weight: bold;
+  font-family: "Gudea";
+  font-size: 20px;
 }
 
 /*this is description to benefit list items*/
 .benefit_desc {
   display: inline;
   color: #b7b7b7;
+  font-family: 'Neuton', serif;
+  font-size: 18px;
 }
 
 .benefit_img {
@@ -153,15 +144,20 @@ input {
   border: 0;
   padding: 10px;
   font-size: 18px;
+  background: #d8d8d8;
+  color: #8c8c8c;
 }
 
 input[type="submit"] {
   background: #0f9900;
-  color: white;
+  color: #ffffff;
 }
 
-.login {
+.login, .signup, .coaches, .players {
   text-align: center;
+  margin: 40px 0 0 0;
+  font-size: 20px;
+  font-family: 'Neuton', serif;
 }
 
 .player_profile {
@@ -191,10 +187,6 @@ input[type="submit"] {
   color: rgba(0,0,0,.8);
 }
 
-.view_players {
-
-}
-
 .coach_image {
   height: 200px;
   width: 200px;
@@ -202,6 +194,10 @@ input[type="submit"] {
 
 .schedule_lesson {
 
+}
+
+.player_info {
+  color: b7b7b7;
 }
 
 #flash_error{

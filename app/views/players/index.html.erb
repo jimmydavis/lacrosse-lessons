@@ -1,5 +1,12 @@
+<div class="players">
+  <h1>Current Lesson Connection Players</h1>
+</div>
+
 <% @players.each do |player| %>
-  <ul class="view_players">
+
+<div class="player_info">
+  <br>
+  <ul>
     <li>
       <%= player.player_name %>,
       <%= player.age %> years old,
@@ -7,4 +14,5 @@
       <img src="<%= player.image %>"/> <br>
     </li>
   </ul>
+</div>
 <% end %>

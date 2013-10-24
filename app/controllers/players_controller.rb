@@ -1,6 +1,5 @@
 class PlayersController < ApplicationController
 
-
   def index
     @players = Player.all
   end
@@ -54,7 +53,9 @@ class PlayersController < ApplicationController
 
   def destroy
     @player = Player.find(params[:id])
-    @player.destroy
+    if @player.destroy
+      flash[:message] = "You have successfully signed out"
+    end
 
     if current_player.id == @player.id
       #continue
