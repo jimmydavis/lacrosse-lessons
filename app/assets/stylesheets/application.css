@@ -82,11 +82,20 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family: Courier;
+  font-family:"Lucida Console", Monaco, monospace;
   font-size: 36px;
   position: relative;
   margin: -10px;
 }
+
+.title_text a {
+  color: #f1da04;
+}
+
+.title_text a:hover {
+  color: rgba(0,0,0,.8);
+}
+
 
 /*this is the login/signup/signin links within nav*/
 .top_right_links {
@@ -120,17 +129,24 @@ footer {
   float: left;
   text-align: center;
   background-color: #ffffff;
+  margin: 0 10px;
 }
 
 /*this is main words (easy, access, results)*/
 .benefit_list {
   color: #0f9900;
+  font-weight: bold;
 }
 
 /*this is description to benefit list items*/
 .benefit_desc {
   display: inline;
   color: #b7b7b7;
+}
+
+.benefit_img {
+  width: 50px;
+  height: 50px;
 }
 
 input {
