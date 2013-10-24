@@ -1,5 +1,6 @@
 <div class="coaches">
   <h1>Coaches:</h1>
+  <br><br>
 </div>
 
 <% if @coaches.empty?  %>
@@ -8,16 +9,17 @@
 
 <% @coaches.each do |coach| %>
 <div class="all_coaches">
-  <span>Name:</span> <%= coach.first_name %>
+  <span class="coach_info_bold">Name:</span> <%= coach.first_name %>
   <%= coach.last_name %> <br>
-  <span>Location:</span> <%= coach.address %> <br>
-  <span>College:</span> <%= coach.college_team %> <br>
-  <span>Professional Team:</span> <%= coach.professional_team %> <br>
-  <span>Position:</span> <%= coach.position %> <br>
-  <span>Accolades:</span> <%= coach.accolades %> <br>
+  <span class="coach_info_bold">Location:</span> <%= coach.address %> <br>
+  <span class="coach_info_bold">College:</span> <%= coach.college_team %> <br>
+  <span class="coach_info_bold">Professional Team:</span> <%= coach.professional_team %> <br>
+  <span class="coach_info_bold">Position:</span> <%= coach.position %> <br>
+  <span class="coach_info_bold">Accolades:</span> <%= coach.accolades %> <br><br><br>
   <img class="coach_image" src="<%= coach.image %>"/> <br>
     <!-- TODO: FIX!!!! -->
-  <span class="schedule_lesson"> <strong> Schedule a Lesson with <%= coach.first_name %>:</strong> <%= mail_to coach.email, name = nil, html_options = {:subject => "Private lesson", :body => "Hi, I am interested in scheduling a private lesson with you!  How does DATE sound at TIME? My SON/DAUGHTER is looking forward to working with you!!"} %></span> <br>
+    <br><br><br>
+  <span class="coach_info_bold" class="schedule_lesson"> <strong> Schedule a Lesson with <%= coach.first_name %>:</strong> <%= mail_to coach.email, name = nil, html_options = {:subject => "Private lesson", :body => "Hi, I am interested in scheduling a private lesson with you!  How does DATE sound at TIME? My SON/DAUGHTER is looking forward to working with you!!"} %></span> <br><br>
 </div>
 <% end %>
 <br>

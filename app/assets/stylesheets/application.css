@@ -26,7 +26,7 @@
   background-color: #ffffff;
   margin: 0 auto;
   padding: 10px;
-  border-bottom: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b7b7b7;
   width: 100%;
  }
 
@@ -38,7 +38,7 @@
   text-align: center;
   width: 100%;
   padding: 10px;
-  border-top: 1px solid #b8b8b8;
+  border-top: 1px solid #b7b7b7;
 }
 
 
@@ -71,7 +71,8 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family:"Lato";
+  font-family: 'Neuton', serif;
+  letter-spacing: .05em;
   font-size: 36px;
   position: relative;
 }
@@ -80,7 +81,7 @@ positioned top left of nav bar*/
   color: #0f9900;
 }
 
-.title_text a:hover {
+.title_text a:hover, .top_right_links a:hover {
   color: rgba(0,0,0,.8);
 }
 
@@ -89,6 +90,10 @@ positioned top left of nav bar*/
   float: right;
   margin: 30px 60px;
   font-family: "Gudea";
+}
+
+.top_right_links a {
+  color: #b7b7b7;
 }
 
 /*this is the main logo on the homepage*/
@@ -108,6 +113,7 @@ positioned top left of nav bar*/
   font-family: 'Neuton', serif;
   font-size: 20px;
   color: #b7b7b7;
+  letter-spacing: .02em;
 }
 /*this is the main benefit list and benefit desc together*/
 .benefit_group {
@@ -124,6 +130,7 @@ positioned top left of nav bar*/
   font-weight: bold;
   font-family: "Gudea";
   font-size: 20px;
+  margin: 10px;
 }
 
 /*this is description to benefit list items*/
@@ -168,8 +175,9 @@ input[type="submit"] {
 
 .all_coaches {
   border: 4px solid #0f9900;
+  width: 50%;
   border-radius: 4px;
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   background-color: #ffffff;
   color: #b7b7b7;
@@ -192,6 +200,10 @@ input[type="submit"] {
   width: 200px;
 }
 
+.coach_info_bold {
+  font-weight: bold;
+}
+
 .schedule_lesson {
 
 }
@@ -199,6 +211,9 @@ input[type="submit"] {
 .player_info {
   color: b7b7b7;
 }
+
+
+
 
 #flash_error{
   color:red;
