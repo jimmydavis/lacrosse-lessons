@@ -1,6 +1,7 @@
 class SessionController < ApplicationController
 
   def new
+    @player = Player.new
   end
 
   def create
@@ -9,7 +10,8 @@ class SessionController < ApplicationController
     player = Player.where(email: email).first
     if player && player.authenticate(password)
       session[:player_id] = player.id
-      redirect_to player
+      flash[:notice] = "You have successfully logged in!"
+      redirect_to '/'
     else
       flash[:error] = "Incorrect email or password, please try again!"
       redirect_to login_path
@@ -22,6 +24,7 @@ class SessionController < ApplicationController
 
   def destroy
     session[:player_id] = nil
+    flash[:notice] = "You have successfully logged out!"
     redirect_to '/'
     # redirect to the search, so the root
   end

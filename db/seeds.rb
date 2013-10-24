@@ -2,7 +2,7 @@ Coach.delete_all
 
 c1 = Coach.create(:first_name => 'Tommy',
        :last_name => 'Davis',
-       :email => 'tdavis@lacrosselessons.com',
+       :email => 'tdavis@lessonconnection.com',
        :college_team => 'Princeton',
        :professional_team => 'NY Lizards',
        :address => 'Levittown, NY',

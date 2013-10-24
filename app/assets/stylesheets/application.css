@@ -18,42 +18,41 @@
   color: rgba(0,0,0,.8);
   text-align: center;
   width: 100%;
-  border: 1px solid #b8b8b8;
  }
 
 .header {
   display :inline-block;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   margin: 0 auto;
   padding: 10px;
-  border-bottom: 1px solid #b7b7b7;
+  border-bottom: 1px solid #e6e6e6;
   width: 100%;
  }
 
  /*this is the footer of benefits*/
 .footer {
   display :inline-block;
-  background-color: #ffffff;
   margin: 0 auto;
   text-align: center;
   width: 100%;
   padding: 10px;
-  border-top: 1px solid #b7b7b7;
+  border-top: 1px solid #e6e6e6;
 }
 
 
 a {
   font-family: "Gudea";
 }
+
 a:link {
   text-decoration: none;
-  color: #0f9900;
+  color: #cf402c;
   margin: 10px;
 }
 
 a:visited {
   text-decoration: none;
-  color: #0f9900;
+  color: #cf402c;
   margin: 10px;
 }
 
@@ -71,14 +70,14 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family: 'Neuton', serif;
+  font-family: 'Titan One', cursive;
   letter-spacing: .05em;
   font-size: 36px;
   position: relative;
 }
 
 .title_text a {
-  color: #0f9900;
+  color: #cf402c;
 }
 
 .title_text a:hover, .top_right_links a:hover {
@@ -88,7 +87,7 @@ positioned top left of nav bar*/
 /*this is the login/signup/signin links within nav*/
 .top_right_links {
   float: right;
-  margin: 30px 60px;
+  margin: 25px 60px;
   font-family: "Gudea";
 }
 
@@ -126,7 +125,7 @@ positioned top left of nav bar*/
 
 /*this is main words (easy, access, results)*/
 .benefit_list {
-  color: #0f9900;
+  color: #cf402c;
   font-weight: bold;
   font-family: "Gudea";
   font-size: 20px;
@@ -150,58 +149,61 @@ positioned top left of nav bar*/
 input {
   border: 0;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   background: #d8d8d8;
   color: #8c8c8c;
 }
 
 input[type="submit"] {
-  background: #0f9900;
+  background: #cf402c;
   color: #ffffff;
 }
 
-.login, .signup, .coaches, .players {
+.login, .signup, .coaches, .players, .no_coaches {
   text-align: center;
-  margin: 40px 0 0 0;
-  font-size: 20px;
-  font-family: 'Neuton', serif;
+  margin: 36px 0 0 0;
+  font-size: 40px;
+  font-family: 'Gudea';
 }
 
 .player_profile {
-  border: 1px solid #0f9900;
+  border: 1px solid #cf402c;
   margin: 10px;
   padding: 10px;
 }
 
 .all_coaches {
-  border: 4px solid #0f9900;
+  border: 4px solid #cf402c;
   width: 50%;
   border-radius: 4px;
   margin: 10px auto;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #e6e6e6;
   color: #b7b7b7;
+  font-family: "Gudea";
+  font-size: 18px;
 }
 
 .all_coaches a:link {
-  color: #0f9900;
+  color: #cf402c;
 }
 
 .all_coaches a:hover {
   color: rgba(0,0,0,.8);
 }
 
-.all_coaches span {
-  color: rgba(0,0,0,.8);
-}
-
 .coach_image {
   height: 200px;
   width: 200px;
+  position: relative;
+  border-radius: 10px;
 }
 
 .coach_info_bold {
   font-weight: bold;
+  color: rgba(0,0,0,.8);
+  font-family: 'Neuton', serif;
+  padding: 10px;
 }
 
 .schedule_lesson {
@@ -213,18 +215,19 @@ input[type="submit"] {
 }
 
 
-
-
 #flash_error{
-  color:red;
+  color: red;
   background: white;
   text-align: center;
+  font-family: 'Gudea';
+
 }
 
 #flash_notice{
-  color:green;
+  color: green;
   background: white;
   text-align: center;
+  font-family: 'Gudea';
 }
 
 

@@ -5,13 +5,6 @@ before_filter :confirm_logged_in
   # TODO, http://apidock.com/rails/ActionController/Filters/ClassMethods/before_filter
 
   def index
-    # check if there is a logged in user
-    # if there is no logged in user
-      # flash message - error must be logged in
-      # redirect to signup or login
-      # render some error
-    # otherwise
-
       @coaches = Coach.all
 
       if params[:search].present?

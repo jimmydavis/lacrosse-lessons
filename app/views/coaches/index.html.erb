@@ -1,10 +1,12 @@
 <div class="coaches">
-  <h1>Coaches:</h1>
+  <h1>Learn From The Best</h1>
   <br><br>
 </div>
 
 <% if @coaches.empty?  %>
-  <p>We're sorry, there are currently no coaches available nearby for a lesson</p>
+  <div class="no_coaches">
+    <p>We're sorry, there are currently no coaches available nearby for a lesson</p>
+  </div>
  <% end %>
 
 <% @coaches.each do |coach| %>
@@ -22,7 +24,9 @@
   <span class="coach_info_bold" class="schedule_lesson"> <strong> Schedule a Lesson with <%= coach.first_name %>:</strong> <%= mail_to coach.email, name = nil, html_options = {:subject => "Private lesson", :body => "Hi, I am interested in scheduling a private lesson with you!  How does DATE sound at TIME? My SON/DAUGHTER is looking forward to working with you!!"} %></span> <br><br>
 </div>
 <% end %>
-<br>
+<br><br>
 <p>Can't find a coach in your area?</p>
 <p>Search a new location:</p>
+<br><br>
 <%= render partial: 'home/search' %>
+<br>

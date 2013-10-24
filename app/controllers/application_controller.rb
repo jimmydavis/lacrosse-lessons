@@ -15,8 +15,8 @@ class ApplicationController < ActionController::Base
 
   def confirm_logged_in
     unless session[:player_id]
-      flash[:error] = "You must be logged in to access this page!"
-      redirect_to '/login'
+      flash[:error] = "You must have an account to access this page!"
+      redirect_to '/signup'
       return false
     else
       return true
