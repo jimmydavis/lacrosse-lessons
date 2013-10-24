@@ -32,7 +32,6 @@
 
   body {
   background-color: #b7b7b7;
-  /*background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjF7hCr0j5M3-d6DzdMBmWDLxmsImfS-1WA-UMVVlJhDbY9MF");*/
   font-family: Helvetica;
   color: rgba(0,0,0,.8);
   text-align: center;
@@ -147,6 +146,7 @@ footer {
 .benefit_img {
   width: 50px;
   height: 50px;
+  margin: 5px;
 }
 
 input {
@@ -189,6 +189,10 @@ input[type="submit"] {
 
 .all_coaches span {
   color: rgba(0,0,0,.8);
+}
+
+.view_players {
+
 }
 
 .coach_image {

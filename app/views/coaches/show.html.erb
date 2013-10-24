@@ -1,6 +1,9 @@
-<h3>Nearby coaches</h3>
 <ul>
 <% for coach in @coach.nearbys(10) %>
   <li><%= link_to coach.address, coach %> (<%= coach.distance.round(2) %> miles away)</li>
 <% end %>
 </ul>
+
+
+<p>Make another search:</p>
+<%= render partial: 'home/search' %>
