@@ -81,7 +81,7 @@ positioned top left of nav bar*/
 }
 
 .title_text a:hover, .top_right_links a:hover {
-  color: rgba(0,0,0,.8);
+  color: #e34630;
 }
 
 /*this is the login/signup/signin links within nav*/
@@ -159,7 +159,12 @@ input[type="submit"] {
   color: #ffffff;
 }
 
-.login, .signup, .coaches, .players, .no_coaches {
+input[type="submit"]:hover {
+  background: #e34630;
+  color: #ffffff;
+}
+
+.login, .signup, .coaches, .players, .no_coaches, .update {
   text-align: center;
   margin: 36px 0 0 0;
   font-size: 40px;
@@ -179,7 +184,7 @@ input[type="submit"] {
   margin: 10px auto;
   padding: 10px;
   background-color: #e6e6e6;
-  color: #b7b7b7;
+  color: #818181;
   font-family: "Gudea";
   font-size: 18px;
 }
@@ -204,10 +209,6 @@ input[type="submit"] {
   color: rgba(0,0,0,.8);
   font-family: 'Neuton', serif;
   padding: 10px;
-}
-
-.schedule_lesson {
-
 }
 
 .player_info {
