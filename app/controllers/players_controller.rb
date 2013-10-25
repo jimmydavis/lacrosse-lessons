@@ -12,7 +12,7 @@ class PlayersController < ApplicationController
   def create
     @player = Player.new(params[:player])
     if @player.save
-      flash[:notice] = "You have successfully signed up with Lesson Connection! Login below..."
+      flash[:notice] = "You have successfully signed up with Lesson Connection!"
       session[:player_id] = @player.id
       redirect_to '/'
     else
@@ -55,17 +55,17 @@ class PlayersController < ApplicationController
   def destroy
     @player = Player.find(params[:id])
     if @player.destroy
-      flash[:message] = "You have successfully signed out"
+      flash[:message] = "Your profile has been deleted.  We're sorry to see you go!"
     end
 
-    if current_player.id == @player.id
-      #continue
-    else
-      # you can't delete their profile
-      flash[:error] = "Sorry, you cannot delete another player!"
-      redirect_to players_path
-    end
-    redirect_to players_path
+    # if current_player.id == @player.id
+    #   #continue
+    # else
+    #   # you can't delete their profile
+    #   flash[:error] = "Sorry, you cannot delete another player!"
+    #   redirect_to players_path
+    # end
+    # redirect_to players_path
   end
 
 end
