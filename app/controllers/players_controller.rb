@@ -14,7 +14,7 @@ class PlayersController < ApplicationController
     if @player.save
       flash[:notice] = "You have successfully signed up with Lesson Connection! Login below..."
       session[:player_id] = @player.id
-      redirect_to root_path
+      redirect_to '/'
     else
       render :new
     end
