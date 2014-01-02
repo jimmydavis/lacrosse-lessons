@@ -13,7 +13,7 @@
 <body>
   <%= render partial: 'layouts/nav' %>
   <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, :id => "flas#{name}" %>
+    <%= content_tag :div, msg, :id => "flash#{name}" %>
   <% end %>
 
 

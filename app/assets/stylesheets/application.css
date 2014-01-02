@@ -164,10 +164,17 @@ input[type="submit"]:hover {
   color: #ffffff;
 }
 
-.login, .signup, .coaches, .players, .no_coaches, .update {
+.login, .signup, .coaches, .players, .update {
   text-align: center;
   margin: 36px 0 0 0;
   font-size: 40px;
+  font-family: 'Gudea';
+}
+
+.no_coaches {
+  text-align: center;
+  margin: 36px 0 0 0;
+  font-size: 24px;
   font-family: 'Gudea';
 }
 
